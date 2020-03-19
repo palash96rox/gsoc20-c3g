@@ -1,0 +1,9 @@
+#%Module1.0
+proc ModulesHelp { } {
+       puts stderr "\tMUGQIC - bowtie2 " ;
+}
+module-whatis "bowtie2  " ;
+                      
+set             root                $::env(MUGQIC_INSTALL_HOME)/software/bowtie2/bowtie2-2.2.3 ;
+prepend-path    PATH                $root
+

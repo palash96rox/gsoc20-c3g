@@ -1,0 +1,9 @@
+#%Module1.0
+proc ModulesHelp { } {
+  puts stderr "\tMUGQIC - tophat "
+}
+module-whatis "tophat"
+
+set             root                /cvmfs/soft.mugqic/CentOS6/software/tophat/tophat-2.0.13.Linux_x86_64
+prepend-path    PATH                $root
+

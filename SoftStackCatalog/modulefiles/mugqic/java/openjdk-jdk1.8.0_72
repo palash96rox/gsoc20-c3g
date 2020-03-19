@@ -1,0 +1,9 @@
+#%Module1.0
+proc ModulesHelp { } {
+  puts stderr "\tMUGQIC - java "
+}
+module-whatis "java"
+
+set             root                /cvmfs/soft.mugqic/CentOS6/software/java/openjdk-jdk1.8.0_72
+prepend-path    PATH                $root/bin
+

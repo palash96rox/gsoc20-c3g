@@ -1,0 +1,10 @@
+#%Module1.0
+proc ModulesHelp { } {
+  puts stderr "\tMUGQIC - pandoc "
+}
+module-whatis "pandoc"
+
+set             root                /cvmfs/soft.mugqic/CentOS6/software/pandoc/pandoc-1.13.1
+prepend-path    PATH                $root/linux/debian/x86_64
+setenv          LANG                en_US.utf8
+

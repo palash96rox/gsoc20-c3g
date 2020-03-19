@@ -1,0 +1,10 @@
+#%Module1.0
+proc ModulesHelp { } {
+  puts stderr "\tMUGQIC - samtools "
+}
+module-whatis "samtools - 0.1.19"
+
+set             root                /cvmfs/soft.mugqic/CentOS6/software/samtools/samtools-0.1.19
+prepend-path    PATH                $root
+prepend-path    PATH                $root/bcftools
+setenv          BCFTOOLS_BIN        $root/bcftools

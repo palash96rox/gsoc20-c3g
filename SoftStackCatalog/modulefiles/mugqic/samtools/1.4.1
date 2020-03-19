@@ -1,0 +1,11 @@
+#%Module1.0
+proc ModulesHelp { } {
+  puts stderr "\tMUGQIC - samtools "
+}
+module-whatis "samtools"
+
+set             root                /cvmfs/soft.mugqic/CentOS6/software/samtools/samtools-1.4.1
+prepend-path    PATH                $root/bin
+prepend-path    LIBRARY_PATH        $root/lib
+prepend-path    LD_LIBRARY_PATH     $root/lib
+

@@ -1,0 +1,9 @@
+#%Module1.0
+proc ModulesHelp { } {
+  puts stderr "\tMUGQIC - bcftools "
+}
+module-whatis "bcftools"
+
+set             root                /cvmfs/soft.mugqic/CentOS6/software/bcftools/bcftools-1.2
+prepend-path    PATH                $root/bin/
+

@@ -1,0 +1,9 @@
+#%Module1.0
+proc ModulesHelp { } {
+  puts stderr "\tMUGQIC - trimmomatic "
+}
+module-whatis "trimmomatic"
+
+set             root                /cvmfs/soft.mugqic/CentOS6/software/trimmomatic/Trimmomatic-0.32
+setenv          TRIMMOMATIC_JAR     $root/trimmomatic-0.32.jar
+

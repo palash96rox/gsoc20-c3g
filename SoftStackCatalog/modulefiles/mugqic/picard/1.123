@@ -1,0 +1,9 @@
+#%Module1.0
+proc ModulesHelp { } {
+  puts stderr "\tMUGQIC - picard "
+}
+module-whatis "picard"
+
+set             root                /cvmfs/soft.mugqic/CentOS6/software/picard/picard-tools-1.123
+setenv          PICARD_HOME         $root
+

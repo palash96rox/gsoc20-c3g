@@ -1,0 +1,9 @@
+#%Module1.0
+proc ModulesHelp { } {
+  puts stderr "\tMUGQIC - star "
+}
+module-whatis "star"
+
+set             root                /cvmfs/soft.mugqic/CentOS6/software/star/STAR_2.7.3a
+prepend-path    PATH                $root/source
+

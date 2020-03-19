@@ -1,0 +1,9 @@
+#%Module1.0
+proc ModulesHelp { } {
+  puts stderr "\tMUGQIC - picard "
+}
+module-whatis "picard - require JDK1.8"
+
+set             root                /cvmfs/soft.mugqic/CentOS6/software/picard/picard-2.9.0
+setenv          PICARD_HOME         $root
+setenv          PICARD_JAR          $root/picard.jar

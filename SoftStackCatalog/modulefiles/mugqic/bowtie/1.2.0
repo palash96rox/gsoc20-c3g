@@ -1,0 +1,11 @@
+#%Module1.0
+proc ModulesHelp { } {
+  puts stderr "\tMUGQIC - bowtie "
+}
+module-whatis "bowtie"
+
+set             root                /cvmfs/soft.mugqic/CentOS6/software/bowtie/bowtie-1.2.0
+prepend-path    PATH                $root
+prepend-path    LIBRARY_PATH        /cvmfs/soft.mugqic/CentOS6/software/tbb_libs
+prepend-path    LD_LIBRARY_PATH     /cvmfs/soft.mugqic/CentOS6/software/tbb_libs
+module load mugqic/python

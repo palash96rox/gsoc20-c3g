@@ -1,0 +1,9 @@
+#%Module1.0
+proc ModulesHelp { } {
+       puts stderr "\tMUGQIC - picard " ;
+}
+module-whatis "picard  " ;
+                      
+set             root                $::env(MUGQIC_INSTALL_HOME)/software/picard/picard-tools-1.118 ;
+setenv          PICARD_HOME         $root ;
+

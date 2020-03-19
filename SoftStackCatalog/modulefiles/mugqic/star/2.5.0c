@@ -1,0 +1,11 @@
+#%Module1.0
+proc ModulesHelp { } {
+  puts stderr "\tMUGQIC - star "
+}
+module-whatis "star"
+
+set             root                /cvmfs/soft.mugqic/CentOS6/software/star/STAR_2.5.0c
+set             prefix              /cvmfs/soft.mugqic/CentOS6/software/gcc/gcc-4.9.3
+set             LFS                 /cvmfs/soft.mugqic/lfs/7.6
+prepend-path    PATH                $root/source
+prepend-path    LD_LIBRARY_PATH     $prefix/lib64:$prefix/lib:$LFS/tools/usr/lib

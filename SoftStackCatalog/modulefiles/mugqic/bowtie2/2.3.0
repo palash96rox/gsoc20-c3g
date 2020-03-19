@@ -1,0 +1,10 @@
+#%Module1.0
+proc ModulesHelp { } {
+  puts stderr "\tMUGQIC - bowtie2 "
+}
+module-whatis "bowtie2"
+
+set             root                /cvmfs/soft.mugqic/CentOS6/software/bowtie2/bowtie2-2.3.0
+prepend-path    PATH                $root
+prepend-path    LIBRARY_PATH        /cvmfs/soft.mugqic/CentOS6/software/tbb_libs
+prepend-path    LD_LIBRARY_PATH     /cvmfs/soft.mugqic/CentOS6/software/tbb_libs

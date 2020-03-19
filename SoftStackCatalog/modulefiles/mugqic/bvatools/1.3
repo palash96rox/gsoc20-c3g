@@ -1,0 +1,10 @@
+#%Module1.0
+proc ModulesHelp { } {
+       puts stderr "\tMUGQIC - bvatools " ;
+}
+module-whatis "bvatools BAM and Variant analysis tools" ;
+                      
+set             root                $::env(MUGQIC_INSTALL_HOME)/software/bvatools/bvatools-1.3 ;
+setenv          BVATOOLS_HOME    $root ;
+setenv          BVATOOLS_JAR     $root/bvatools-1.3-full.jar ;
+

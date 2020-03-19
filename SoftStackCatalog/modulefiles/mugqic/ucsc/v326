@@ -1,0 +1,9 @@
+#%Module1.0
+proc ModulesHelp { } {
+  puts stderr "\tMUGQIC - ucsc "
+}
+module-whatis "ucsc"
+
+set             root                /cvmfs/soft.mugqic/CentOS6/software/ucsc/ucsc-v326
+prepend-path    PATH                $root/bin
+

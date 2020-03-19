@@ -1,0 +1,10 @@
+#%Module1.0
+proc ModulesHelp { } {
+  puts stderr "\tMUGQIC - bvatools "
+}
+module-whatis "bvatools"
+
+set             root                /cvmfs/soft.mugqic/CentOS6/software/bvatools/bvatools-1.5
+setenv          BVATOOLS_HOME       $root
+setenv          BVATOOLS_JAR        $root/bvatools-1.5-full.jar
+

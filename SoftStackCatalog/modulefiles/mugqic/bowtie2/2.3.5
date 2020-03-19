@@ -1,0 +1,9 @@
+#%Module1.0
+proc ModulesHelp { } {
+  puts stderr "\tMUGQIC - bowtie2 "
+}
+module-whatis "bowtie2"
+
+set             root                /cvmfs/soft.mugqic/CentOS6/software/bowtie2/bowtie2-2.3.5
+prepend-path    PATH                $root
+

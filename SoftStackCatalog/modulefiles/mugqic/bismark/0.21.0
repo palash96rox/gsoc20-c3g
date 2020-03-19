@@ -1,0 +1,9 @@
+#%Module1.0
+proc ModulesHelp { } {
+  puts stderr "\tMUGQIC - bismark "
+}
+module-whatis "bismark"
+
+set             root                /cvmfs/soft.mugqic/CentOS6/software/bismark/Bismark-0.21.0
+prepend-path    PATH                $root
+
