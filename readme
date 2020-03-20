@@ -1,0 +1,13 @@
+GSoC 2020 - Automatic update of the C3G software stack catalog
+
+
+1- Parse the whole file structure of the data_test/SoftStackCatalog/modulefiles/mugqic/ folder and create a JSON file that would represent all the provided software and available versions.
+
+  The file `current.json` represents the software versions. Simply run `$ ./catalog.sh SoftStackCatalog` after making the file an executable to generate the json file.
+
+
+2- Identify the lacking information for a comprehensive and meaningful software catalog : besides the name and version of the software, what relevant information should be provided by the catalog (software description, website, etc...). Propose ways to find, gather and store this missing information.
+
+  - Automated updating of software along with the catalog. Notify the author of that software at the very least.
+  - Website, docs, sample projects, edu (depending on how accessible the data should be). `catalog.sh` could potentially ping google.com and select the first (or the most relevent url[s] for these fields.
+  - Lastly, it'd be cool if the script could also detect which modules of the project (eg, genpipes) employ certain softwares for convenience. One way to do this could be to make the author [installing or updating the software] specify which modules the software affects.

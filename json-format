@@ -1,0 +1,19 @@
+{
+  name: "",
+  versions: [],
+  current: "",
+  installed: date,
+  updated: date,
+
+  desc: "",
+  url: "",
+  docs: "",
+
+  author: "", // ccv connect?
+  modules: [], // modules where it is used
+    // an automated approach to detect what modules the software is used in
+    // maybe update in time after manual init
+  auto_modules: [],
+
+  notes: ""
+}
